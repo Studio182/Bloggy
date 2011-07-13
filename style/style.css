@@ -50,7 +50,7 @@ h1 sup	{vertical-align: top; font-size: 22px;}
 /*p	{margin: 20px 0 0 0; padding: 0;}*/
 	
 div:target	{display: block;}
-header	{ font-style: italic; letter-spacing: normal; text-shadow: 0px 0px 1px black; color: white; font-size: 50px; font-family: monospace; }
+header	{ border-color: black; border-width: 1px; font-style: italic; letter-spacing: normal; text-shadow: 0px 0px 1px black; color: white; font-size: 50px; font-family: monospace; }
 subtitle	{ color: white; font-size: 30px; font-family: monospace; }
 img	{ border-color: #c1c1c1; border-width: 3px; border-style: ridge; text-shadow: 0px 0px 1px black; max-width: 520px; }
 nav	{ margin-right: 20px; margin-left: 20px; }
