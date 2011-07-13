@@ -4,3 +4,5 @@ TODO:
 * New visual look
 * New about page
 * [MAYBE] More features
+
+(This readme markdown worked :D)
