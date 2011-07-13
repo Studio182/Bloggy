@@ -68,17 +68,19 @@ echo("<center><subtitle>".$post."</subtitle></center>");
                         Y8b d88P Y8b d88P Y8b d88P     
                          "Y88P"   "Y88P"   "Y88P"      
 
-
 </pre>
-	<hr>
-	<h2>Bloggy is a the hacker's choice blog engine by:
-	</center>
-	<ul>
+<pre style="font: 20px/10px monospace;"> 
+Bloggy beta1 codename LOL Pie
+</pre>
+<hr>
+<h2>Bloggy is a the hacker's choice blog engine by:
+</center>
+<ul>
 	<li><a href="http://madebyhd.us">Hunter Dolan</a>, the PHP/HTML/CSS ninja</li>
 	<li><a href="http://zad0xsis.net">Pablo Merino</a>, the HTML/CSS coder</li>
 	
 	</ul>
-	<center>
+<center>
 <p>A project from:</p>
 <pre style="font: 10px/10px monospace;"> 
 
@@ -93,7 +95,6 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
                                                                              
 </pre>
 <p>(BTW, Bloggy is open source here: LINK!)</p>
-<p>Yes, we also hate Internet Explorer:<br><br><img src="img/ie_crash.png" alt="hateie"></p>
 <p>Open source - <?php echo date('Y'); ?> </p>
 <p><?php echo("Today is ".date('F dS \of Y ')); ?></p>
 </center>
