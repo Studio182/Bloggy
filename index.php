@@ -40,7 +40,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <!-- PHP START -->
 
 <?php
-$subtitles = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P");
+$subtitles = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
 $post = $subtitles[array_rand($subtitles)];
 echo("<center><subtitle>".$post."</subtitle></center>");
 ?>
