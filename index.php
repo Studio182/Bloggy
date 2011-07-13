@@ -96,6 +96,9 @@ function getDirectoryList($directory)
 	/*if (in_array("Thefile", $results)) {
   		$results = remove_item_by_value($results, "Thefile");
  	}*/ //for blacklisting a file
+ 	if (in_array("POSTTEMPLATE", $results)) {
+  		$results = remove_item_by_value($results, "POSTTEMPLATE");
+ 	}
 	// done!
 	return $results;
 
@@ -115,8 +118,8 @@ function parse($filename) {
   	return $content;
 }
 
-$dirlist = getDirectoryList('./posts');
-
+$dirlistnormal = getDirectoryList('./posts');
+$dirlist = array_reverse($dirlistnormal);
 foreach ($dirlist as $file) {
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
