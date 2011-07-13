@@ -12,7 +12,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <head>
 <title>Bloggy!</title>
 <link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="style.css" /> 
+<link type="text/css" rel="stylesheet" href="style/style.css" /> 
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="facebox/facebox.js" type="text/javascript"></script>
 <script type="text/javascript">

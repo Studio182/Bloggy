@@ -1,10 +1,10 @@
-html	{background-image: url(bg.png); background-repeat: repeat; height: 100%; width: 680px; margin: 0 auto; padding: 40px 0 100px 0;
+html	{background-image: url(../img/bg.png); background-repeat: repeat; height: 100%; width: 680px; margin: 0 auto; padding: 40px 0 100px 0;
 		 /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
 		 -webkit-box-sizing: border-box;
 		    -moz-box-sizing: border-box;
 		         box-sizing: border-box;}
 		         
-#box	{position: static; background-image: url(post.png); background-repeat: repeat; min-height: 350px;
+#box	{position: static; background-image: url(../img/post.png); background-repeat: repeat; min-height: 350px;
 		 margin: 0 0 40px; padding: 20px 20px 20px 100px;
 		 border: 4px solid white;
 		 -webkit-border-radius: 12px;
