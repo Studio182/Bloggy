@@ -1,0 +1,56 @@
+html	{background-image: url(bg.png); background-repeat: repeat; height: 100%; width: 680px; margin: 0 auto; padding: 40px 0 100px 0;
+		 /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
+		 -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		         box-sizing: border-box;}
+		         
+#box	{position: static; background-image: url(post.png); background-repeat: repeat; min-height: 350px;
+		 margin: 0 0 40px; padding: 20px 20px 20px 100px;
+		 border: 4px solid white;
+		 -webkit-border-radius: 12px;
+		    -moz-border-radius: 12px;
+		         border-radius: 12px;
+		 
+		 -webkit-box-shadow:       5px 5px 25px rgba(0,0,0,.5);
+		 
+		 -webkit-box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		    -moz-box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		         box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		 font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		 color: #333;
+		 background-color: #eee;}
+	
+#footer	{ padding-bottom: 20px; padding-top: 20px; position: static; background-image: url(post.png); background-repeat: repeat; min-height: 20px;
+		 margin: 0 0 40px;
+		 border: 4px solid white;
+		 -webkit-border-radius: 12px;
+		    -moz-border-radius: 12px;
+		         border-radius: 12px;
+		 
+		 -webkit-box-shadow:       5px 5px 25px rgba(0,0,0,.5);
+		 
+		 -webkit-box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		    -moz-box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		         box-shadow: inset 5px 5px 25px rgba(0,0,0,.5);
+		 font: 13px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		 color: #333;
+		 background-color: #eee;}
+	
+h1	{ position: absolute; margin-left: -70px;  padding: 0; white-space: nowrap;
+		 font: 36px "Helvetica Neue" , Arial, Helvetica, sans-serif; text-transform: uppercase;
+		 color: #aaa; text-align: right;
+		 
+		 -webkit-transform-origin: left top; -webkit-transform: rotate(270deg) translateX(-100%);
+		    -moz-transform-origin: left top;    -moz-transform: rotate(270deg) translateX(-100%);
+		      -o-transform-origin: left top;      -o-transform: rotate(270deg) translateX(-100%);
+		 
+		 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+		 
+h1 sup	{vertical-align: top; font-size: 22px;}
+	
+p	{margin: 20px 0 0 0; padding: 0;}
+	
+div:target	{display: block;}
+header	{ color: white; font-size: 50px; font-family: monospace; }
+subtitle	{ color: white; font-size: 30px; font-family: monospace; }
+img	{ max-width: 520px; }
