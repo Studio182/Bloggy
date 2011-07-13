@@ -17,9 +17,9 @@ Guidelines for editing posts:
 3 Is magical!
 								
 Explaining the tags: 																	
-* <h1> is the date tag																	
-* <sup> in the <h1> is the ordinal number, by example: 12th								
-* <h2> is the post's title															
-* <p> is the content 																	
-REMEMBER IN <p> YOU CAN WRITE ANY KIND OF HTML! 										
-For making images appear in the lightbox, set the rel= tag to facebox, rel="facebox" 	
+* ==<h1> is the date tag==																	
+* ==<sup> in the <h1> is the ordinal number, by example: 12th==							
+* ==<h2> is the post's title==															
+* ==<p> is the conten ==																	
+REMEMBER IN ==<p>== YOU CAN WRITE ANY KIND OF HTML! 										
+==For making images appear in the lightbox, set the rel= tag to facebox, rel="facebox"== 	
