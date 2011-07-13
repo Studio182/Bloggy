@@ -57,4 +57,4 @@ subtitle	{ color: white; font-size: 30px; font-family: 'Maven Pro', cursive; }
 img	{ border-color: #c1c1c1; border-width: 3px; border-style: ridge; text-shadow: 0px 0px 1px black; max-width: 520px; }
 nav	{ margin-right: 20px; margin-left: 20px; }
 pre { text-shadow: 0px 0px 1px black; }
-p {font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}
+p {word-wrap: break-word; word-break: normal; text-overflow: ellipsis; width: 520px; max-width: 520px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}

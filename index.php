@@ -91,7 +91,26 @@ $dirlist = getDirectoryList('./posts');
 
 foreach ($dirlist as $file) {
 
-	echo file_get_contents('./posts/'.$file);
+	//echo file_get_contents('./posts/'.$file);
+	$tagValue = array();
+	$file = fopen('./posts/'.$file, "r") or exit("Unable to open file!");
+
+	while(!feof($file)) {
+ 		$line = fgets($file);
+ 		$tagDelimiter = strpos ($line ,":");
+  		$tag = substr($line,0,$tagDelimiter);
+ 		$value = substr($line,$tagDelimiter+1,strlen($line)-$tagDelimiter);
+ 		$tagValue[$tag] = $value;
+	}
+	
+	fclose($file);
+	echo("<div id=\"box\">");
+	echo("<h1>".$tagValue["Date"]."</h1>");
+	echo("<h2>".$tagValue["Title"]."</h2>");
+	echo("<h3>Posted by ".$tagValue["Author"]."</h3>");
+	echo("<p>".$tagValue["Body"]."</p>");
+	echo("</div>");
+
 
 }
 
