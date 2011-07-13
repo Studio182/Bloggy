@@ -35,7 +35,7 @@ html	{background-image: url(../img/bg.png); background-repeat: repeat; height: 1
 		 color: #333;
 		 background-color: #eee;}
 	
-h1	{ position: absolute; margin-left: -70px;  padding: 0; white-space: nowrap;
+h1	{ letter-spacing: 3px; position: absolute; margin-left: -70px;  padding: 0; white-space: nowrap;
 		 font: 36px "Helvetica Neue" , Arial, Helvetica, sans-serif; text-transform: uppercase;
 		 color: #aaa; text-align: right;
 		 
@@ -43,7 +43,9 @@ h1	{ position: absolute; margin-left: -70px;  padding: 0; white-space: nowrap;
 		    -moz-transform-origin: left top;    -moz-transform: rotate(270deg) translateX(-100%);
 		      -o-transform-origin: left top;      -o-transform: rotate(270deg) translateX(-100%);
 		 
-		 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+		 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		 font-family: 'Bangers', cursive;
+}
 		 
 h1 sup	{vertical-align: top; font-size: 22px;}
 	
