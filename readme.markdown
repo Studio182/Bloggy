@@ -1,9 +1,0 @@
-# Bloggy, the hacker's choice for blogging
-
-
-h2. Bloggy, the hacker's choice blogging system
-
-TODO:
-* New visual look
-* New about page
-* [MAYBE] More features
