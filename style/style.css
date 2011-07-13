@@ -54,3 +54,5 @@ div:target	{display: block;}
 header	{ color: white; font-size: 50px; font-family: monospace; }
 subtitle	{ color: white; font-size: 30px; font-family: monospace; }
 img	{ max-width: 520px; }
+nav	{ margin-right: 20px; margin-left: 20px; }
+pre { text-shadow: 0px 0px 1px black; }

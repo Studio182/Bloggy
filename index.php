@@ -33,7 +33,6 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 
 <center><header><a href="index.php" style="text-decoration: none; color: white;">Bloggy!</a></header></center>
 <center><subtitle>The hacker's choice!</subtitle></center>
-</div>
 <br>
 <div></div>
 <?php

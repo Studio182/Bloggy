@@ -15,38 +15,45 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <link type="text/css" rel="stylesheet" href="style/style.css" /> 
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/facebox/facebox.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/typewriter.js"></script>
+
 <script type="text/javascript">
     jQuery(document).ready(function($) {
       $('a[rel*=facebox]').facebox({
         loadingImage : 'js/facebox/loading.gif',
         closeImage   : 'js/facebox/closelabel.png'
-      })
-    })
+		})
+		$('header').typewriter( 500 );
+       })
     </script>
+
 </head>
 <html>
 <body>
 <center><header><a href="index.php" style="text-decoration: none; color: white;">Bloggy!</a></header></center>
+<center><subtitle>The hacker's choice!</subtitle></center>
+<br>
+
 <div></div>
 
 <div id="footer">
+<nav><a href="./" style="color: #306bb9; text-decoration: none; font-size: 20px;">bloggy</a> <span style="font-size: 20px;">/</span> <strong><a href="#" style="color: #306bb9; text-decoration: none; font-size: 20px;">about</a></strong> 
+
 <center><pre style="font: 10px/10px monospace;"> 
-	
-	
- ____  _                         _ 
-|  _ \| |                       | |
-| |_) | | ___   __ _  __ _ _   _| |
-|  _ <| |/ _ \ / _` |/ _` | | | | |
-| |_) | | (_) | (_| | (_| | |_| |_|
-|____/|_|\___/ \__, |\__, |\__, (_)
-                __/ | __/ | __/ |  
-               |___/ |___/ |___/   
+:::::::::  :::        ::::::::   ::::::::   ::::::::  :::   ::: ::: 
+:+:    :+: :+:       :+:    :+: :+:    :+: :+:    :+: :+:   :+: :+: 
++:+    +:+ +:+       +:+    +:+ +:+        +:+         +:+ +:+  +:+ 
++#++:++#+  +#+       +#+    +:+ :#:        :#:          +#++:   +#+ 
++#+    +#+ +#+       +#+    +#+ +#+   +#+# +#+   +#+#    +#+    +#+ 
+#+#    #+# #+#       #+#    #+# #+#    #+# #+#    #+#    #+#        
+#########  ########## ########   ########   ########     ###    ### 
 
 </pre>
 	<hr>
 	<h2>Bloggy is a the hacker's choice blog engine made by <a href="http://madebyhd.us">Hunter Dolan</a> and <a href="http://zad0xsis.net">Pablo Merino</a></h2></center>
 
 </div>
+</nav>
 <a href="http://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://gs1.wac.edgecastcdn.net/80460E/assets/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
 </body>
 </html>
