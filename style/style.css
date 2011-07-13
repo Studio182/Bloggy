@@ -51,7 +51,8 @@ h1 sup	{vertical-align: top; font-size: 22px;}
 	
 div:target	{display: block;}
 header	{ border-color: black; border-width: 1px; font-style: italic; letter-spacing: normal; text-shadow: 0px 0px 1px black; color: white; font-size: 50px; font-family: 'Lobster Two', cursive; }
-subtitle	{ color: white; font-size: 30px; font-family: monospace; }
+subtitle	{ color: white; font-size: 30px; font-family: 'Maven Pro', cursive; }
 img	{ border-color: #c1c1c1; border-width: 3px; border-style: ridge; text-shadow: 0px 0px 1px black; max-width: 520px; }
 nav	{ margin-right: 20px; margin-left: 20px; }
 pre { text-shadow: 0px 0px 1px black; }
+p {font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}
