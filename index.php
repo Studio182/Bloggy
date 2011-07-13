@@ -36,7 +36,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <br>
 <div></div>
 <?php
-
+// MADE BY HUNTER DOLAN! Thanks!
 function remove_item_by_value($array, $val = '', $preserve_keys = true)
 {
 	if (empty($array) || !is_array($array)) return false;
