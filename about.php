@@ -37,7 +37,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <div></div>
 
 <div id="footer">
-<nav><a href="./" style="color: #306bb9; text-decoration: none; font-size: 20px;">bloggy</a> <span style="font-size: 20px;">/</span> <strong><a href="#" style="color: #306bb9; text-decoration: none; font-size: 20px;">about</a></strong> 
+<nav><!--<a href="./" style="color: #306bb9; text-decoration: none; font-size: 20px;">bloggy</a> <span style="font-size: 20px;">/</span> <strong><a href="#" style="color: #306bb9; text-decoration: none; font-size: 20px;">about</a></strong> -->
 
 <center><pre style="font: 10px/10px monospace;"> 
 
@@ -88,5 +88,10 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
 
 </nav>
 <a href="http://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://gs1.wac.edgecastcdn.net/80460E/assets/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+<div id="footer">
+<center><a href="index.php"><h2>Home!</h2></a></center>     
+<center><a href="random.php"><h2>Random Post!</h2></a></center>     
+
+</div>   
 </body>
 </html>
