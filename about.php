@@ -69,8 +69,8 @@ echo("<center><subtitle>".$post."</subtitle></center>");
                          "Y88P"   "Y88P"   "Y88P"      
 
 </pre>
-<pre style="font: 20px/10px monospace;"> 
-Bloggy beta1 codename LOL Pie
+<pre style="font: 15px monospace;"> 
+Bloggy beta1 codename CasperVail 11B
 </pre>
 <hr>
 <h2>Bloggy is a the hacker's choice blog engine by:
