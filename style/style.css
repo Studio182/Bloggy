@@ -44,7 +44,6 @@ h1	{ letter-spacing: 3px; position: absolute; margin-left: -70px;  padding: 0; w
 		 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 		 font-family: 'Bangers', cursive;
 }
-		 
 h1 sup	{vertical-align: top; font-size: 22px;}
 	
 /*p	{margin: 20px 0 0 0; padding: 0;}*/
@@ -56,5 +55,5 @@ img	{ border-color: #c1c1c1; border-width: 3px; border-style: ridge; text-shadow
 nav	{ margin-right: 20px; margin-left: 20px; }
 pre { text-shadow: 0px 0px 1px black; }
 p {text-align: justify; word-wrap: break-word; word-break: normal; text-overflow: ellipsis; width: 520px; max-width: 520px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}
-a {color: #306bb9; text-decoration: none;}
+a {font-family: sans-serif; color: #306bb9; text-decoration: none;}
 span {font-size: 20px; color: white;}
