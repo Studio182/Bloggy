@@ -11,15 +11,15 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 -->
 <head>
 <title>Bloggy!</title>
-<link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="js/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="style/style.css" /> 
 <script src="js/jquery.js" type="text/javascript"></script>
-<script src="facebox/facebox.js" type="text/javascript"></script>
+<script src="js/facebox/facebox.js" type="text/javascript"></script>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
       $('a[rel*=facebox]').facebox({
-        loadingImage : 'facebox/loading.gif',
-        closeImage   : 'facebox/closelabel.png'
+        loadingImage : 'js/facebox/loading.gif',
+        closeImage   : 'js/facebox/closelabel.png'
       })
     })
     </script>
