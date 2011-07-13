@@ -16,6 +16,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/facebox/facebox.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/typewriter.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Lobster+Two&v2" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
