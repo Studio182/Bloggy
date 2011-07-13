@@ -15,7 +15,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <link type="text/css" rel="stylesheet" href="style/style.css" /> 
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/facebox/facebox.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/typewriter.js"></script>
+<script type="text/javascript" src="js/typewriter.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Maven+Pro|Yanone+Kaffeesatz|Bangers&v2' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -27,19 +27,32 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 		})
 		$('header').typewriter( 500 );
        })
-    </script>
+</script>
 
 </head>
+
 <html>
 <body>
-<center><header><a href="index.php" style="text-decoration: none; color: white;">Bloggy!</a></header></center>
-<center><subtitle>The hacker's choice!</subtitle></center>
+
+<center><header>Bloggy!</header></center>
+<!-- PHP START -->
+
+<?php
+$subtitles = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P");
+$post = $subtitles[array_rand($subtitles)];
+echo("<center><subtitle>".$post."</subtitle></center>");
+?>
+
+<!-- PHP END -->
 <br>
 
 <div></div>
 
-<div id="footer">
-<nav><!--<a href="./" style="color: #306bb9; text-decoration: none; font-size: 20px;">bloggy</a> <span style="font-size: 20px;">/</span> <strong><a href="#" style="color: #306bb9; text-decoration: none; font-size: 20px;">about</a></strong> -->
+<center><a href="index.php" style="color: white; font-size: 20px;">Home</a> <span style="font-size: 20px; color: white;">|</span> <a href="random.php" style="color: white; font-size: 20px;">Random post</a> <span style="font-size: 20px; color: white;">|</span> <a href="#" style="color: white; font-size: 20px;">About</a>
+</center>
+
+<div id="about-box">
+<nav><a href="./" style="color: #306bb9; text-decoration: none; font-size: 20px;">bloggy</a> <span style="color: black">/</span> <strong><a href="#" style="color: #306bb9; text-decoration: none; font-size: 20px;">about</a></strong>
 
 <center><pre style="font: 10px/10px monospace;"> 
 
@@ -82,21 +95,12 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
 <p>(BTW, Bloggy is open source here: LINK!)</p>
 <p>Yes, we also hate Internet Explorer:<br><br><img src="img/ie_crash.png" alt="hateie"></p>
 <p>Open source - <?php echo date('Y'); ?> </p>
+<p><?php echo("Today is ".date('F dS \of Y ')); ?></p>
 </center>
 </div>
 
-                                                                            
-                                                                             
-
-
 </nav>
 <a href="http://github.com/you"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://gs1.wac.edgecastcdn.net/80460E/assets/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
-<div id="footer">
-<center><a href="index.php"><h2>Home!</h2></a></center>     
-<center><a href="random.php"><h2>Random Post!</h2></a></center>     
-<center><p><?php echo("Today is ".date('F dS \of Y ')); ?></p></center>
 
-</div>   
-<br>
 </body>
 </html>

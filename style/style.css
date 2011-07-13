@@ -3,8 +3,7 @@ html	{background-image: url(../img/bg.png); background-repeat: repeat; height: 1
 		    -moz-box-sizing: border-box;
 		         box-sizing: border-box;}
 		         
-#box	{position: static; background-image: url(../img/post.png); background-repeat: repeat; min-height: 350px;
-		 margin: 0 0 40px; padding: 20px 20px 20px 100px;
+#box	{margin-left: 0; margin-bottom: 40px; margin-right: 0; margin-top: 15px; position: static; background-image: url(../img/post.png); background-repeat: repeat; min-height: 350px; padding: 20px 20px 20px 100px;
 		 border: 4px solid white;
 		 -webkit-border-radius: 12px;
 		    -moz-border-radius: 12px;
@@ -19,8 +18,7 @@ html	{background-image: url(../img/bg.png); background-repeat: repeat; height: 1
 		 color: #333;
 		 background-color: #eee;}
 	
-#footer	{ padding-bottom: 20px; padding-top: 20px; position: static; background-image: url(../img/post.png); background-repeat: repeat; min-height: 20px;
-		 margin: 0 0 40px;
+#about-box	{ margin-left: 0; margin-bottom: 40px; margin-right: 0; margin-top: 15px; padding-bottom: 20px; padding-top: 20px; position: static; background-image: url(../img/post.png); background-repeat: repeat; min-height: 20px;
 		 border: 4px solid white;
 		 -webkit-border-radius: 12px;
 		    -moz-border-radius: 12px;
@@ -57,4 +55,6 @@ subtitle	{ color: white; font-size: 30px; font-family: 'Maven Pro', cursive; }
 img	{ border-color: #c1c1c1; border-width: 3px; border-style: ridge; text-shadow: 0px 0px 1px black; max-width: 520px; }
 nav	{ margin-right: 20px; margin-left: 20px; }
 pre { text-shadow: 0px 0px 1px black; }
-p {word-wrap: break-word; word-break: normal; text-overflow: ellipsis; width: 520px; max-width: 520px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}
+p {text-align: justify; word-wrap: break-word; word-break: normal; text-overflow: ellipsis; width: 520px; max-width: 520px; font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 20px}
+a {color: #306bb9; text-decoration: none;}
+span {font-size: 20px; color: white;}
