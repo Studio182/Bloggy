@@ -56,9 +56,14 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 
 </pre>
 	<hr>
-	<h2>Bloggy is a the hacker's choice blog engine made by <a href="http://madebyhd.us">Hunter Dolan</a> and <a href="http://zad0xsis.net">Pablo Merino</a></h2></center>
+	<h2>Bloggy is a the hacker's choice blog engine by:
+	</center>
+	<ul>
+	<li><a href="http://madebyhd.us">Hunter Dolan</a>, the PHP/HTML/CSS ninja</li>
+	<li><a href="http://zad0xsis.net">Pablo Merino</a>, the HTML/CSS coder</li>
 	
-<center>
+	</ul>
+	<center>
 <p>A project from:</p>
 <pre style="font: 10px/10px monospace;"> 
 
@@ -73,7 +78,8 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
                                                                              
 </pre>
 <p>(BTW, Bloggy is open source here: LINK!)</p>
-
+<p>Open source - <?php echo date('Y'); ?> </p>
+</center>
 </div>
 
                                                                             
