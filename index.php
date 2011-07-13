@@ -103,31 +103,6 @@ function parse($filename) {
 $dirlist = getDirectoryList('./posts');
 
 foreach ($dirlist as $file) {
-
-	//echo file_get_contents('./posts/'.$file);
-	/*$tagValue = array();
-	$filecontent = fopen('./posts/'.$file, "r") or exit("Unable to open file!");
-
-	while(!feof($filecontent)) {
- 		$line = fgets($filecontent);
- 		$tagDelimiter = strpos ($line ,":");
-  		$tag = substr($line,0,$tagDelimiter);
- 		$value = substr($line,$tagDelimiter+2,strlen($line)-$tagDelimiter);
- 		$tagValue[$tag] = $value;
-	}
-	
-	fclose($filecontent);
-	echo("<div id=\"box\">");
-	echo("\n<h1>".$tagValue["Date"]."</h1>");
-	echo("<h2>".$tagValue["Title"]."</h2>\n");
-	echo("\n<h3>Posted by ".$tagValue["Author"]."</h3>");
-	echo("<p>".$tagValue["Body"]."</p>\n");
-	echo("</div>");
-
-	
-	$dict = array();
-	$dict = parse('./posts/'.$file);
-	echo ($dict["Date"]);*/
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
 	echo("<div id=\"box\">\n");

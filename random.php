@@ -87,32 +87,29 @@ function getDirectoryList($directory)
 
 }
 
+function parse($filename) {
+  	$lines = file($filename);
+  	$content = array();
+  	foreach ($lines as $line) {
+    	$posColon = strpos($line, ":");
+   		$tag = substr($line, 0, $posColon);
+    	$body = substr($line, $posColon+1);
+
+    	$content[$tag] = trim($body);
+  	}
+  	return $content;
+}
+
 $dirlist = getDirectoryList('./posts');
 $post = $dirlist[array_rand($dirlist)];
-
-	$tagValue = array();
-	$file = fopen('./posts/'.$post, "r") or exit("Unable to open file!");
-
-	while(!feof($file)) {
- 		$line = fgets($file);
- 		$tagDelimiter = strpos ($line ,":");
-  		$tag = substr($line,0,$tagDelimiter);
- 		$value = substr($line,$tagDelimiter+1,strlen($line)-$tagDelimiter);
- 		$tagValue[$tag] = $value;
-	}
-	
-	fclose($file);
-	echo("<div id=\"box\">");
-	echo("<h1>".$tagValue["Date"]."</h1>");
-	echo("<h2>".$tagValue["Title"]."</h2>");
-	echo("<h3>Posted by ".$tagValue["Author"]."</h3>");
-	echo("<p>".$tagValue["Body"]."</p>");
-	echo("</div>");
-//foreach ($dirlist as $file) {
-
-//	echo file_get_contents(.$file);
-
-//}
+$tagValue = array();
+$tagValue = parse('./posts/'.$post);
+echo("<div id=\"box\">\n");
+echo("<h1>".$tagValue["Date"]."</h1>\n");
+echo("<h2>".$tagValue["Title"]."</h2>\n");
+echo("<h3>Posted by ".$tagValue["Author"]."</h3>\n");
+echo("<p>".$tagValue["Body"]."</p>\n");
+echo("</div>");
 
 ?>
 <a href="http://github.com/you"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://gs1.wac.edgecastcdn.net/80460E/assets/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
