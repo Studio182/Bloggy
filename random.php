@@ -116,7 +116,7 @@ echo("</div>");
 <div id="footer">
 <center><a href="about.php"><h2>About!</h2></a></center>     
 <center><a href="index.php"><h2>Home!</h2></a></center>     
-<center><p><?php echo(date('F dS \of Y ')); ?></p></center>
+<center><p><?php echo("Today is ".date('F dS \of Y ')); ?></p></center>
 
 </div>
 <br>

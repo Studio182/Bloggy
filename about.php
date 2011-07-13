@@ -94,7 +94,7 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
 <div id="footer">
 <center><a href="index.php"><h2>Home!</h2></a></center>     
 <center><a href="random.php"><h2>Random Post!</h2></a></center>     
-<center><p><?php echo(date('F dS \of Y ')); ?></p></center>
+<center><p><?php echo("Today is ".date('F dS \of Y ')); ?></p></center>
 
 </div>   
 <br>
