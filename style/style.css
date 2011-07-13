@@ -1,5 +1,4 @@
 html	{background-image: url(../img/bg.png); background-repeat: repeat; height: 100%; width: 680px; margin: 0 auto; padding: 40px 0 100px 0;
-		 /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
 		 -webkit-box-sizing: border-box;
 		    -moz-box-sizing: border-box;
 		         box-sizing: border-box;}
@@ -48,7 +47,7 @@ h1	{ position: absolute; margin-left: -70px;  padding: 0; white-space: nowrap;
 		 
 h1 sup	{vertical-align: top; font-size: 22px;}
 	
-p	{margin: 20px 0 0 0; padding: 0;}
+/*p	{margin: 20px 0 0 0; padding: 0;}*/
 	
 div:target	{display: block;}
 header	{ color: white; font-size: 50px; font-family: monospace; }
