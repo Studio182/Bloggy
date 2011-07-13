@@ -15,21 +15,25 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <link type="text/css" rel="stylesheet" href="style/style.css" /> 
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/facebox/facebox.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/typewriter.js"></script>
+
 <script type="text/javascript">
     jQuery(document).ready(function($) {
       $('a[rel*=facebox]').facebox({
         loadingImage : 'js/facebox/loading.gif',
         closeImage   : 'js/facebox/closelabel.png'
-      })
-    })
+		})
+		$('header').typewriter( 500 );
+       })
     </script>
-
 </head>
 <html>
 <body>
+<div id="ticker-area"> 
+
 <center><header><a href="index.php" style="text-decoration: none; color: white;">Bloggy!</a></header></center>
 <center><subtitle>The hacker's choice!</subtitle></center>
-
+</div>
 <br>
 <div></div>
 <?php
