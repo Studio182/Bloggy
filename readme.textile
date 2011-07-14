@@ -16,3 +16,7 @@ h5. Studio 182 Devs
 h5. 3rd Party Devs
 
 * "Harish Chauhan":http://www.phpclasses.org/professionals/profile/3322/ - IMAP / Mimedecode class
+h5. Libraries
+
+* "Facebox":http://defunkt.io/facebox/ - A facebook-like lightbox
+* "Smarty":http://www.smarty.net/ - An layout/template system
