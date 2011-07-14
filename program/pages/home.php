@@ -41,6 +41,8 @@ foreach ($dirlist as $file) {
 			$content .= "</div>";
 		}
 	}
+	$content .= "</div>";
+
 }
 
 include('./program/lib/constants.php');
