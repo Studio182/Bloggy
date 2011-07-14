@@ -1,0 +1,18 @@
+h1. Bloggy
+
+p. _The Hackers Blogging System_
+
+h4. By "Studio182":http://studio182.net/
+
+
+h3. Internal Credits / Special Thanks
+
+h5. Studio 182 Devs
+
+* "Pablo Merino":http://zad0xsis.net/ - Initial Idea, Amazing Coding!
+
+* "Hunter Dolan":http://madebyhd.us/ - Coding
+
+h5. 3rd Party Devs
+
+* "Harish Chauhan":http://www.phpclasses.org/professionals/profile/3322/ - IMAP / Mimedecode class
