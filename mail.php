@@ -67,5 +67,5 @@ fwrite($file_stream, $post);
 $response=$imap->delete_message(1);
 
 }
-header('Location: index.php')
+//header('Location: index.php')
 ?>
