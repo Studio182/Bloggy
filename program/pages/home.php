@@ -38,7 +38,6 @@ foreach ($dirlist as $file) {
 			$content .= "</div>";
 		} else {
 			$content .= "<hr>\n";
-			$content .= "</div>";
 		}
 	}
 	$content .= "</div>";
