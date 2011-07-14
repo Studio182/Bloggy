@@ -25,16 +25,23 @@ $bloggy_config = array();
 // Title of Blog
 $bloggy_config['title'] = "Bloggy!";
 
+// Bloggy version
+$bloggy_config['enablemobile'] = 1;
+
 // Skin
 //This code detects if the device is an iPhone/iPod
 
-
-if (strpos($_SERVER['HTTP_USER_AGENT'],'iPhone')) {
-	$bloggy_config['skin'] = "iphone"; //This is an iPhone
-} elseif (strpos($_SERVER['HTTP_USER_AGENT'],'iPod')) {
-	$bloggy_config['skin'] = "iphone"; //This is an iPod (they use the same skin)
+if($bloggy_config['enablemobile']) {
+	if (strpos($_SERVER['HTTP_USER_AGENT'],'iPhone')) {
+		$bloggy_config['skin'] = "iphone"; //This is an iPhone
+	} elseif (strpos($_SERVER['HTTP_USER_AGENT'],'iPod')) {
+		$bloggy_config['skin'] = "iphone"; //This is an iPod (they use the same skin)
+	} else {
+		$bloggy_config['skin'] = "basic";//This is another device or computer
+	} 
 } else {
 	$bloggy_config['skin'] = "basic";//This is another device or computer
+
 }
 // Subtitles
 
