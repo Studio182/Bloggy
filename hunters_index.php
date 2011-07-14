@@ -19,7 +19,7 @@
 
 require_once('./config/main.inc.php');
 require_once('./lib/functions.php');
-require_once('./mail.php');
+//require_once('./mail.php');
 
 ?>
 <!DOCTYPE html>
@@ -64,6 +64,52 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 <!-- PHP START -->
 
 <?php
+
+function md5_dir($dir)
+{
+    if (!is_dir($dir))
+    {
+        return false;
+    }
+    
+    $filemd5s = array();
+    $d = dir($dir);
+
+    while (false !== ($entry = $d->read()))
+    {
+        if ($entry != '.' && $entry != '..')
+        {
+             if (is_dir($dir.'/'.$entry))
+             {
+                 $filemd5s[] = MD5_DIR($dir.'/'.$entry);
+             }
+             else
+             {
+                 $filemd5s[] = md5_file($dir.'/'.$entry);
+             }
+         }
+    }
+    $d->close();
+    return md5(implode('', $filemd5s));
+}
+
+$cur_index['hash'] = MD5_DIR('./posts');
+
+echo $cur_index['hash'];
+
+if(file_exists('./tmp/index.php')) {
+require_once('./tmp/index.php');
+} else {
+$index = array();
+}
+
+
+
+if($index['hash'] == $cur_index['hash']) {
+
+}
+
+
 $subtitles = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
 $post = $subtitles[array_rand($subtitles)];
 echo("<center><subtitle>".$post."</subtitle></center>");
