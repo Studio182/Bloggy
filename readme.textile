@@ -20,4 +20,4 @@ h5. 3rd Party Devs
 h5. Libraries
 
 * "Facebox":http://defunkt.io/facebox/ - A facebook-like lightbox
-* "Smarty":http://www.smarty.net/ - An layout/template system
+* "Smarty":http://www.smarty.net/ - A layout/template system
