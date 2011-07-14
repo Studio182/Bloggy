@@ -61,7 +61,6 @@ $post_name = "./posts/post".$post_number.".post";
 
 $file_stream = fopen($post_name, 'w');
 fwrite($file_stream, $post);
-header('Location: ./index.php');
 
 }
 
