@@ -28,7 +28,10 @@ $bloggy_config['title'] = "Bloggy!";
 $bloggy_config['skin'] = "bloggy";
 
 // Subtitles
-$bloggy_config['subtitles'] = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
+
+$bloggy_config['subtitles'] = array("For Hackers with Schedules", "Because it's fast!", "The hacker's choice!", "#1", "Blogging for Hackers");
+
+//$bloggy_config['subtitles'] = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
 
 // Navigation Bar
 $bloggy_config['nav'] = array("Home" => "home", "Random Post" => "random", "About" => "about");
