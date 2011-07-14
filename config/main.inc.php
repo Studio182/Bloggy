@@ -39,15 +39,15 @@ $bloggy_config['imap_host'] = "ssl://imap.gmail.com";
 $bloggy_config['imap_port'] = 993;
 
 // IMAP User
-$bloggy_config['imap_user'] = "";
+$bloggy_config['imap_user'] = "bloggy.testing@gmail.com";
 
 // IMAP Password
-$bloggy_config['imap_pass'] = "";
+$bloggy_config['imap_pass'] = "Studio182Test";
 
 // IMAP Folder (You can customize what folders we look for post in, please note that this folder will be cleared on every new post)
 $bloggy_config['imap_folder'] = "INBOX";
 
 // Mail Password (an extra auth layer for email posting, to disable simply set this to false)
-$bloggy_config['mail_pass'] = "mysupersecretpassword";
+$bloggy_config['mail_pass'] = "Studio182PostPassword";
 
 ?>

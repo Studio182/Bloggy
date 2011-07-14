@@ -1,3 +1,25 @@
+<?php
+/*
++-------------------------------------------------------------------+
+| ./index.php														|
+|                                                                   |
+| This file is part of the Bloggy Blogging Suite                    |
+| Copyright (C) 2011, Studio 182 Dev. - Worldwide Division          |
+|                                                                   |
+| Licensed under the GNU GPL                                        |
+|                                                                   |
+| PURPOSE:                                                          |
+|   Index File			                                            |
+|                                                                   |
++----------------------- Studio 182 Team ---------------------------+
+| Hunter Dolan <hunter@studio182.net>                               |
+| Pablo Merino <pablo@studio182.net>                                |
++-------------------------------------------------------------------+
+*/
+
+require_once('./config/main.inc.php');
+require_once('./lib/functions.php');
+?>
 <!DOCTYPE html>
 
 <!-- 
@@ -54,69 +76,8 @@ echo("<center><subtitle>".$post."</subtitle></center>");
 <center><a href="index.php" style="color: white; text-decoration: none; font-size: 20px;">Home</a> <span>|</span> <a href="javascript:history.go(0)" style="color: white; text-decoration: none; font-size: 20px;">Random post</a> <span> | </span> <a href="about.php" style="color: white; text-decoration: none; font-size: 20px;">About</a>
 </center>
 <!-- PHP START -->
+
 <?php
-// MADE BY HUNTER DOLAN! Thanks!
-function remove_item_by_value($array, $val = '', $preserve_keys = true)
-{
-	if (empty($array) || !is_array($array)) return false;
-	if (!in_array($val, $array)) return $array;
-
-	foreach ($array as $key => $value) {
-		if ($value == $val) unset($array[$key]);
-	}
-
-	return ($preserve_keys === true) ? $array : array_values($array);
-}
-
-function getDirectoryList($directory)
-{
-
-	// create an array to hold directory list
-	$results = array();
-
-	// create a handler for the directory
-	$handler = opendir($directory);
-
-	// open directory and walk through the filenames
-	while ($file = readdir($handler)) {
-
-		// if file isn't this directory or its parent, add it to the results
-		if ($file != "." && $file != "..") {
-			$results[] = $file;
-		}
-		
-	}
-
-	// tidy up: close the handler
-	closedir($handler);
-
-	if (in_array(".DS_Store", $results)) {
-		$results = remove_item_by_value($results, ".DS_Store");
-	}
-	if (in_array("POSTTEMPLATE", $results)) {
-  		$results = remove_item_by_value($results, "POSTTEMPLATE");
- 	}
-	/*if (in_array("Thefile", $results)) {
-  		$results = remove_item_by_value($results, "Thefile");
- 	}*/ //for blacklisting a file
-	// done!
-	return $results;
-
-
-}
-
-function parse($filename) {
-  	$lines = file($filename);
-  	$content = array();
-  	foreach ($lines as $line) {
-    	$posColon = strpos($line, ":");
-   		$tag = substr($line, 0, $posColon);
-    	$body = substr($line, $posColon+1);
-
-    	$content[$tag] = trim($body);
-  	}
-  	return $content;
-}
 
 $dirlist = getDirectoryList('./posts');
 $post = $dirlist[array_rand($dirlist)];
@@ -124,13 +85,15 @@ $tagValue = array();
 $tagValue = parse('./posts/'.$post);
 echo("<div id=\"box\">\n");
 echo("<a href=\"./\" style=\"color: #306bb9; text-decoration: none; font-size: 20px;\">bloggy</a> <span style=\"font-size: 20px; color: black\">/</span> <strong><a href=\"javascript:history.go(0)\" style=\"color: #306bb9; text-decoration: none; font-size: 20px;\">random</a></strong>");
-echo("<h1>".$tagValue["Date"]."</h1>\n");
-echo("<h2>".$tagValue["Title"]."</h2>\n");
-echo("<h3>Posted by ".$tagValue["Author"]."</h3>\n");
-echo("<p>".$tagValue["Body"]."</p>\n");
+echo("<h1>".$tagValue["date"]."</h1>\n");
+echo("<h2>".$tagValue["title"]."</h2>\n");
+echo("<h3>Posted by ".$tagValue["author"]."</h3>\n");
+echo("<p>".$tagValue["body"]."</p>\n");
 echo("</div>");
 
+
 ?>
+
 <!-- PHP END -->
 
 <a href="http://github.com/you"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://gs1.wac.edgecastcdn.net/80460E/assets/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
