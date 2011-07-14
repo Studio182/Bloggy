@@ -1,7 +1,7 @@
 <?php
 /*
 +-------------------------------------------------------------------+
-| ./index.php														|
+| ./random.php														|
 |                                                                   |
 | This file is part of the Bloggy Blogging Suite                    |
 | Copyright (C) 2011, Studio 182 Dev. - Worldwide Division          |
@@ -9,7 +9,7 @@
 | Licensed under the GNU GPL                                        |
 |                                                                   |
 | PURPOSE:                                                          |
-|   Index File			                                            |
+|   Random post File			                                    |
 |                                                                   |
 +----------------------- Studio 182 Team ---------------------------+
 | Hunter Dolan <hunter@studio182.net>                               |
