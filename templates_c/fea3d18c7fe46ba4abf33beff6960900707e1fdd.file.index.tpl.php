@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2011-07-14 14:49:50
+<?php /* Smarty version Smarty-3.0.8, created on 2011-07-14 19:37:10
          compiled from "./skins/bloggy/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:17582739264e1f020e6a7f64-66419247%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_smarty_tpl->decodeProperties(array (
     'fea3d18c7fe46ba4abf33beff6960900707e1fdd' => 
     array (
       0 => './skins/bloggy/index.tpl',
-      1 => 1310654989,
+      1 => 1310672145,
       2 => 'file',
     ),
   ),
