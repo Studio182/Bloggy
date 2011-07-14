@@ -1,5 +1,36 @@
 <?php
+if($bloggy_config['skin'] == "iphone") {
+$content = <<<EOF
 
+<div id="box" class="about">
+<h1>
+Beta 1 - Caspervail 11B
+</h1>
+<center><pre style="font: 30px/10px monospace;"> 
+
+Bloggy!
+
+</pre></center>
+
+<hr>
+<h2>Bloggy is a the hacker's choice blog engine by:
+
+<ul>
+	<li><a href="http://madebyhd.us">Hunter Dolan</a>, the PHP/HTML/CSS ninja</li>
+	<li><a href="http://zad0xsis.net">Pablo Merino</a>, the HTML/CSS coder</li>
+	
+	</ul>
+
+<p>A project from:</p>
+<center><pre style="font: 30px/10px monospace;"> 
+
+Studio182
+
+</pre></center>
+<p>(BTW, Bloggy is open source here: LINK!)</p>
+</div>
+EOF;
+} else {
 $content = <<<EOF
 
 <div id="box" class="about">
@@ -47,4 +78,5 @@ Y88b  d88P Y88b.  Y88b 888 Y88b 888 888 Y88..88P  888  Y88b  d88P 888"
 <p>(BTW, Bloggy is open source here: LINK!)</p>
 </div>
 EOF;
+}
 include('./program/lib/constants.php');

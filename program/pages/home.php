@@ -33,9 +33,13 @@ foreach ($dirlist as $file) {
 	$content .= "<h1>".$tagValue["date"]."</h1>\n";
 	$content .= "<h3>Posted by ".$tagValue["author"]."</h3>\n";
 	$content .= "<p>".$tagValue["body"]."</p>\n";
-	$content .= "</div>";
 	if($bloggy_config['skin'] == "iphone") {
-		$content .= "<hr>\n";
+		if('./posts/'.$file == './posts/post1.post'){
+			$content .= "</div>";
+		} else {
+			$content .= "<hr>\n";
+			$content .= "</div>";
+		}
 	}
 }
 
