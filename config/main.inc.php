@@ -17,7 +17,8 @@
 +-------------------------------------------------------------------+
 */
 
-
+// Set to 1 when developing!
+error_reporting(0);
 
 $bloggy_config = array();
 
@@ -25,8 +26,14 @@ $bloggy_config = array();
 $bloggy_config['title'] = "Bloggy!";
 
 // Skin
-$bloggy_config['skin'] = "bloggy";
-
+//This code detects if the device is an iPhone/iPod
+if (ereg('iPhone',$_SERVER['HTTP_USER_AGENT'])) {
+	$bloggy_config['skin'] = "iphone"; //This is an iPhone
+} elseif (ereg('iPod',$_SERVER['HTTP_USER_AGENT'])) {
+	$bloggy_config['skin'] = "iphone"; //This is an iPod (they use the same skin)
+} else {
+	$bloggy_config['skin'] = "basic";//This is another device or computer
+}
 // Subtitles
 
 $bloggy_config['subtitles'] = array("For Hackers with Schedules", "Because it's fast!", "The hacker's choice!", "#1", "Blogging for Hackers");

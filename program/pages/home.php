@@ -29,12 +29,14 @@ foreach ($dirlist as $file) {
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
 	$content .= "<div id=\"box\">\n";
-	$content .= "<h1>".$tagValue["date"]."</h1>\n";
 	$content .="<h2>".$tagValue["title"]."</h2>\n";
+	$content .= "<h1>".$tagValue["date"]."</h1>\n";
 	$content .= "<h3>Posted by ".$tagValue["author"]."</h3>\n";
 	$content .= "<p>".$tagValue["body"]."</p>\n";
 	$content .= "</div>";
-
+	if($bloggy_config['skin'] == "iphone") {
+		$content .= "<hr>\n";
+	}
 }
 
 include('./program/lib/constants.php');
