@@ -67,7 +67,7 @@ echo("<center><subtitle>".$post."</subtitle></center>");
 
 <div></div>
 
-<center><a href="index.php" style="color: white; font-size: 20px;">Home</a> <span style="font-size: 20px; color: white;">|</span> <a href="random.php" style="color: white; font-size: 20px;">Random post</a> <span style="font-size: 20px; color: white;">|</span> <a href="#" style="color: white; font-size: 20px;">About</a>
+<center><a href="#" style="color: white; text-decoration: none; font-size: 20px;">Home</a> <span>|</span> <a href="random.php" style="color: white; text-decoration: none; font-size: 20px;">Random post</a> <span>|</span> <a href="mail.php" style="color: white; text-decoration: none; font-size: 20px;">Check for mail posts</a> <span>|</span> <a href="about.php" style="color: white; text-decoration: none; font-size: 20px;">About</a> 
 </center>
 
 <div id="about-box">
