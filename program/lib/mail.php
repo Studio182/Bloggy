@@ -21,10 +21,8 @@
 */
 
 require_once("./config/main.inc.php");
-require_once("./lib/imap.inc.php");
-require_once("./lib/mimedecode.inc.php");
-require_once("./lib/functions.php");
-
+require_once("./program/lib/imap.inc.php");
+require_once("./program/lib/mimedecode.inc.php");
 
 $imap = new IMAPMAIL;
 

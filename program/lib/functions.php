@@ -59,6 +59,9 @@ function getDirectoryList($directory)
 	if (in_array(".DS_Store", $results)) {
 		$results = remove_item_by_value($results, ".DS_Store");
 	}
+	if (in_array("index.php", $results)) {
+		$results = remove_item_by_value($results, "index.php");
+	}
 	/*if (in_array("Thefile", $results)) {
   		$results = remove_item_by_value($results, "Thefile");
  	}*/ //for blacklisting a file

@@ -17,20 +17,25 @@
 +-------------------------------------------------------------------+
 */
 
-# Pablo: Simply configure this for an email account, please note that this script will clear any messages in the folder that you select
-# Example Message
-
-/*
-Password: mysupersecretpassword
-Title: My Post Title
-Date: The Date
-Author: You
-Body: You're message here!!!
-
-*/
 
 
 $bloggy_config = array();
+
+// Title of Blog
+$bloggy_config['title'] = "Bloggy!";
+
+// Skin
+$bloggy_config['skin'] = "bloggy";
+
+// Subtitles
+$bloggy_config['subtitles'] = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
+
+// Navigation Bar
+$bloggy_config['nav'] = array("Home" => "home", "Random Post" => "random", "About" => "about");
+
+
+// Check Mail On Every Load
+$bloggy_config['check_mail'] = true;
 
 // IMAP Host (for SSL put ssl:// infront of the server address)
 $bloggy_config['imap_host'] = "ssl://imap.gmail.com";
