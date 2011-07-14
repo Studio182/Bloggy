@@ -1,3 +1,22 @@
+<?php
+/*
++-------------------------------------------------------------------+
+| ./about.php														|
+|                                                                   |
+| This file is part of the Bloggy Blogging Suite                    |
+| Copyright (C) 2011, Studio 182 Dev. - Worldwide Division          |
+|                                                                   |
+| Licensed under the GNU GPL                                        |
+|                                                                   |
+| PURPOSE:                                                          |
+|   Main About File			                                        |
+|                                                                   |
++----------------------- Studio 182 Team ---------------------------+
+| Hunter Dolan <hunter@studio182.net>                               |
+| Pablo Merino <pablo@studio182.net>                                |
++-------------------------------------------------------------------+
+*/
+?>
 <!DOCTYPE html>
 <!-- 
 

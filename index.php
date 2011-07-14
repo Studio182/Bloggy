@@ -1,3 +1,25 @@
+<?php
+/*
++-------------------------------------------------------------------+
+| ./index.php														|
+|                                                                   |
+| This file is part of the Bloggy Blogging Suite                    |
+| Copyright (C) 2011, Studio 182 Dev. - Worldwide Division          |
+|                                                                   |
+| Licensed under the GNU GPL                                        |
+|                                                                   |
+| PURPOSE:                                                          |
+|   Index File			                                            |
+|                                                                   |
++----------------------- Studio 182 Team ---------------------------+
+| Hunter Dolan <hunter@studio182.net>                               |
+| Pablo Merino <pablo@studio182.net>                                |
++-------------------------------------------------------------------+
+*/
+
+require_once('./config/main.inc.php');
+require_once('./lib/functions.php');
+?>
 <!DOCTYPE html>
 
 <!-- 
@@ -55,68 +77,6 @@ echo("<center><subtitle>".$post."</subtitle></center>");
 
 <!-- PHP START -->
 <?php
-// MADE BY HUNTER DOLAN! Thanks!
-function remove_item_by_value($array, $val = '', $preserve_keys = true)
-{
-	if (empty($array) || !is_array($array)) return false;
-	if (!in_array($val, $array)) return $array;
-
-	foreach ($array as $key => $value) {
-		if ($value == $val) unset($array[$key]);
-	}
-
-	return ($preserve_keys === true) ? $array : array_values($array);
-}
-
-function getDirectoryList($directory)
-{
-
-	// create an array to hold directory list
-	$results = array();
-
-	// create a handler for the directory
-	$handler = opendir($directory);
-
-	// open directory and walk through the filenames
-	while ($file = readdir($handler)) {
-
-		// if file isn't this directory or its parent, add it to the results
-		if ($file != "." && $file != "..") {
-			$results[] = $file;
-		}
-		
-	}
-
-	// tidy up: close the handler
-	closedir($handler);
-
-	if (in_array(".DS_Store", $results)) {
-		$results = remove_item_by_value($results, ".DS_Store");
-	}
-	/*if (in_array("Thefile", $results)) {
-  		$results = remove_item_by_value($results, "Thefile");
- 	}*/ //for blacklisting a file
- 	if (in_array("POSTTEMPLATE", $results)) {
-  		$results = remove_item_by_value($results, "POSTTEMPLATE");
- 	}
-	// done!
-	return $results;
-
-
-}
-
-function parse($filename) {
-  	$lines = file($filename);
-  	$content = array();
-  	foreach ($lines as $line) {
-    	$posColon = strpos($line, ":");
-   		$tag = substr($line, 0, $posColon);
-    	$body = substr($line, $posColon+1);
-
-    	$content[$tag] = trim($body);
-  	}
-  	return $content;
-}
 
 $dirlistnormal = getDirectoryList('./posts');
 $dirlist = array_reverse($dirlistnormal);
@@ -124,10 +84,10 @@ foreach ($dirlist as $file) {
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
 	echo("<div id=\"box\">\n");
-	echo("<h1>".$tagValue["Date"]."</h1>\n");
-	echo("<h2>".$tagValue["Title"]."</h2>\n");
-	echo("<h3>Posted by ".$tagValue["Author"]."</h3>\n");
-	echo("<p>".$tagValue["Body"]."</p>\n");
+	echo("<h1>".$tagValue["date"]."</h1>\n");
+	echo("<h2>".$tagValue["title"]."</h2>\n");
+	echo("<h3>Posted by ".$tagValue["author"]."</h3>\n");
+	echo("<p>".$tagValue["body"]."</p>\n");
 	echo("</div>");
 
 }
