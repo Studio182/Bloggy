@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2011-07-15 09:53:01
+<?php /* Smarty version Smarty-3.0.8, created on 2011-07-15 10:11:49
          compiled from "./skins/basic/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16905248004e200dfddf9122-82919351%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:988243744e201265f21f24-60389174%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '587a24cac2cd67b4c2cabb63137e05d44e2b56c9' => 
     array (
       0 => './skins/basic/header.tpl',
-      1 => 1310723563,
+      1 => 1310723772,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16905248004e200dfddf9122-82919351',
+  'nocache_hash' => '988243744e201265f21f24-60389174',
   'function' => 
   array (
   ),
@@ -41,7 +41,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 </script>
     <script type="text/javascript" src="./skins/basic/js/typewriter.js">
 </script>
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Maven+Pro|Yanone+Kaffeesatz|Bangers|Istok+Web&v2' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Maven+Pro|Yanone+Kaffeesatz|Bangers|Istok+Web&v2' rel='stylesheet' type='text/css'>-->
     <link rel="shortcut icon" href="./skins/basic/img/favicon.ico">
     <script type="text/javascript">
 jQuery(document).ready(function($) {

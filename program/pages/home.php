@@ -23,8 +23,10 @@
 
 $content = "";
 
-$dirlistnormal = getDirectoryList('./posts');
-$dirlist = array_reverse($dirlistnormal);
+/*$dirlistnormal = getDirectoryList('./posts');
+$dirlist = array_reverse($dirlistnormal);*/
+$dirlist = getDirectoryList('./posts');
+
 foreach ($dirlist as $file) {
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
