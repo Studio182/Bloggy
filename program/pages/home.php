@@ -23,9 +23,9 @@
 
 $content = "";
 
-/*$dirlistnormal = getDirectoryList('./posts');
-$dirlist = array_reverse($dirlistnormal);*/
 $dirlist = getDirectoryList('./posts');
+rsort($dirlist);
+
 
 foreach ($dirlist as $file) {
 	$tagValue = array();
