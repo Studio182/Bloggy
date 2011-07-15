@@ -21,7 +21,7 @@ bloggy, simple blog system made by hunter dolan and pablo merino
 </script>
     <script type="text/javascript" src="./skins/basic/js/typewriter.js">
 </script>
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Maven+Pro|Yanone+Kaffeesatz|Bangers|Istok+Web&v2' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700|Maven+Pro|Yanone+Kaffeesatz|Bangers|Istok+Web&v2' rel='stylesheet' type='text/css'>-->
     <link rel="shortcut icon" href="./skins/basic/img/favicon.ico">
     <script type="text/javascript">
 jQuery(document).ready(function($) {
