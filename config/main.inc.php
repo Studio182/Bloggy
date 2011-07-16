@@ -30,7 +30,7 @@ $bloggy_config['enablemobile'] = 1;
 
 // Skin
 
-$bloggy_config['defaultheme'] = "basic";
+$bloggy_config['defaultheme'] = "bloggy";
 
 //This code detects if the device is an iPhone/iPod
 if($bloggy_config['enablemobile']) {
