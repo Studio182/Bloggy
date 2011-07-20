@@ -28,6 +28,9 @@ $bloggy_config['title'] = "Bloggy!";
 // Bloggy version
 $bloggy_config['enablemobile'] = 1;
 
+// Lifefyre Site ID (for comments)
+$bloggy_config['livefyre_id'] = "287386";
+
 // Skin
 
 $bloggy_config['defaultheme'] = "bloggy";
@@ -56,7 +59,7 @@ $bloggy_config['nav'] = array("Home" => "home", "Random Post" => "random", "Abou
 
 
 // Check Mail On Every Load
-$bloggy_config['check_mail'] = true;
+$bloggy_config['check_mail'] = false;
 
 // IMAP Host (for SSL put ssl:// infront of the server address)
 $bloggy_config['imap_host'] = "ssl://imap.gmail.com";

@@ -5,8 +5,11 @@ if($_SERVER['QUERY_STRING'] == "" || $_SERVER['QUERY_STRING'] == "/") {
 header('Location:?/home');
 }
 
-if(file_exists('./program/pages'.$_SERVER['QUERY_STRING'].'.php')) {
-include('./program/pages'.$_SERVER['QUERY_STRING'].'.php');
+$location = explode('/',$_SERVER['QUERY_STRING']);
+
+
+if(file_exists('./program/pages/'.$location[1].'.php')) {
+include('./program/pages/'.$location[1].'.php');
 } else {
 include('./program/pages/404.php');
 }

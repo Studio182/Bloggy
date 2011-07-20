@@ -28,10 +28,13 @@ rsort($dirlist);
 
 
 foreach ($dirlist as $file) {
+
+$file_no_ext = str_replace('.post','',$file);
+
 	$tagValue = array();
 	$tagValue = parse('./posts/'.$file);
 	$content .= "<div id=\"box\">\n";
-	$content .="<h2><a href=\"?/viewpost?view=$file\">".$tagValue["title"]."</a></h2>\n";
+	$content .="<h2><a href=\"?/viewpost/".$file_no_ext."/\">".$tagValue["title"]."</a></h2>\n";
 	$content .= "<h1>".$tagValue["date"]."</h1>\n";
 	$content .= "<h3>Posted by ".$tagValue["author"]."</h3>\n";
 	$content .= "<p>".$tagValue["body"]."</p>\n";
