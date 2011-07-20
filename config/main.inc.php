@@ -47,7 +47,7 @@ if($bloggy_config['enablemobile']) {
 }
 // Subtitles
 
-$bloggy_config['subtitles'] = array("For Hackers with Schedules", "Because it's fast!", "The hacker's choice!", "#1", "Blogging for Hackers");
+$bloggy_config['subtitles'] = array("For Hackers with Schedules", "Because it's fast!", "The hacker's choice!", "#1", "Blogging for Hackers", "No need of SQL!");
 
 //$bloggy_config['subtitles'] = array("The hacker's choice!", "You'll actually love it!", "Made with PHP, HTML, JS, CSS and Bacon", "Well, enjoy :P", "This was made by P and H!", "No, this is free", "#1 Dad!", "Spain won the World Cup!", "LOL");
 
