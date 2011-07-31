@@ -27,7 +27,7 @@ Bloggy!
 Studio182
 
 </pre></center>
-<p>(BTW, Bloggy is open source here: LINK!)</p>
+<p>(BTW, Bloggy is open source here: <a href="https://github.com/Studio182/Bloggy">Link to GitHub</a>)</p>
 </div>
 EOF;
 } else {
