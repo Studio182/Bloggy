@@ -24,8 +24,9 @@
 $content = "";
 
 $dirlist = getDirectoryList('./posts');
-rsort($dirlist);
 
+natsort($dirlist);
+$dirlist = array_reverse($dirlist);
 
 foreach ($dirlist as $file) {
 
