@@ -63,7 +63,7 @@ $bloggy_config['check_mail'] = false;
 $bloggy_config['imap_host'] = "";
 
 // IMAP Port (For SSL Host it's generally 993, and for Standard it's normally 143)
-$bloggy_config['imap_port'] = "";
+$bloggy_config['imap_port'] = 0;
 
 // IMAP User
 $bloggy_config['imap_user'] = "";
