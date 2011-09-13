@@ -25,4 +25,3 @@ h5. Libraries
 p. Everything else is code made by the Studio 182 Devs :)
 p. Tip: if anything works, try doing: @chmod -R 0777 DIR/WHERE/BLOGGY/IS/@ :)
 
-"Bloggy! Live is here!":http://deploy.zad0xsis.net/bloggy/
